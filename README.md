@@ -39,7 +39,7 @@ You can install `myDataLib` directly from GitHub using `pip`:
 ```bash
 pip install -e git+https://github.com/SooryR/myDataLib.git#egg=my_data_lib
 ```
-
+```python
 import pandas as pd
 from my_data_lib.io import import_data, export_data
 from my_data_lib.cleaning import clean_data
@@ -67,4 +67,5 @@ plot_histogram(df, column='duration (seconds)', title = "Distribution of Duratio
 
 # Export cleaned data
 export_data(df, 'cleaned_data.csv')
+```
 
